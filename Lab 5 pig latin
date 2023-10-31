@@ -1,0 +1,10 @@
+def pig_latin(sentence):
+        words = sentence.split(" ")
+        result = ""
+        for word in words:
+                letter_first = word[0]
+                word = word[1:]
+                word = word + letter_first + "ay"
+                result += word + " "
+        return result
+print (pig_latin ("I like cheetos."))
